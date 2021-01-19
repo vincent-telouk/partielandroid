@@ -16,9 +16,9 @@
             android:id="@+id/avatar"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:contentDescription="Image"
             android:scaleType="centerInside"
-            android:src="@mipmap/ic_launcher_round"
-            android:contentDescription="Image"/>
+            android:src="@mipmap/ic_launcher_round" />
 
         <TextView
             android:id="@+id/login"

@@ -12,7 +12,7 @@ import com.squareup.picasso.Picasso
 import com.teloukvincent.github.R
 
 class SearchAdapter(context: Context) :
-    RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
+        RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
 
     private val users: ArrayList<UserShort> = ArrayList()
 

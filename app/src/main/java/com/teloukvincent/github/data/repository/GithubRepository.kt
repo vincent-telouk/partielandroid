@@ -10,9 +10,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class GithubRepository : GithubRepository {
     private val retrofit: Retrofit = Retrofit.Builder()
-        .baseUrl(UserApi.BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create())
-        .build()
+            .baseUrl(UserApi.BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
 
     private val api = retrofit.create(UserApi::class.java)
 
@@ -32,11 +32,11 @@ class GithubRepository : GithubRepository {
 fun com.teloukvincent.github.data.model.UserRepoShort.toUserShort() = UserShort(this.id, this.login, this.avatar)
 
 fun GithubUserShort.toRepoShort() = RepoShort(
-    this.id,
-    this.name,
-    this.description,
-    this.language,
-    this.fork,
-    this.watchers,
-    this.license
+        this.id,
+        this.name,
+        this.description,
+        this.language,
+        this.fork,
+        this.watchers,
+        this.license
 )

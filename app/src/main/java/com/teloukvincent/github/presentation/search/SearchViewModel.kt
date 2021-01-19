@@ -12,7 +12,7 @@ class SearchViewModel : ViewModel() {
     private val repository: GithubRepository = com.teloukvincent.github.data.repository.GithubRepository()
 
     private val _state = MutableLiveData<SearchState>()
-    val state : LiveData<SearchState> get() = _state
+    val state: LiveData<SearchState> get() = _state
 
     fun searchUser(text: String) {
         _state.value = SearchState.LoadingState

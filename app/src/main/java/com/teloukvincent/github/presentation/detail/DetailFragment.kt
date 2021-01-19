@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.teloukvincent.github.R
 
-class DetailFragment: Fragment() {
+class DetailFragment : Fragment() {
 
     private lateinit var progressBar: ProgressBar
     private lateinit var name: TextView
@@ -25,9 +25,9 @@ class DetailFragment: Fragment() {
     private lateinit var adapter: DetailAdapter
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_user_search, container, false)
     }

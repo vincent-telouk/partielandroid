@@ -13,11 +13,11 @@ interface UserApi {
 
     @GET("/search/users?q=google")
     suspend fun searchUser(
-        @Query("q") login: String,
+            @Query("q") login: String,
     ): SearchResponse
 
     @GET("/users/{login}/repos")
     suspend fun getUserRepo(
-        @Path("login") login: String,
+            @Path("login") login: String,
     ): List<GithubUserShort>
 }

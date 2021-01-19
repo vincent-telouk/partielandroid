@@ -10,7 +10,7 @@ import com.teloukvincent.github.R
 import com.teloukvincent.github.domain.model.RepoShort
 
 class DetailAdapter(context: Context) :
-    RecyclerView.Adapter<DetailAdapter.ViewHolder>() {
+        RecyclerView.Adapter<DetailAdapter.ViewHolder>() {
 
     private val repos: ArrayList<RepoShort> = ArrayList()
 

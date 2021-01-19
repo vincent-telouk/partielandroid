@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class SearchResponse(
         @SerializedName("items")
-    val users: List<UserRepoShort>,
+        val users: List<UserRepoShort>,
         @SerializedName("total_count")
-    val resultNumber: Int,
+        val resultNumber: Int,
 )
